@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity"
+    tools:ignore="ExtraText">
+
+        <ProgressBar
+            android:theme="@style/hungerstyle"
+            android:id="@+id/hunger"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="20"
+            app:layout_constraintBottom_toTopOf="@+id/cleanliness"
+            app:layout_constraintLeft_toRightOf="@+id/hungertext"
+            android:padding="10dp"/>
+
+
+        <ProgressBar
+            android:theme="@style/hygienestyle"
+            android:id="@+id/cleanliness"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="40"
+            app:layout_constraintBottom_toTopOf="@+id/fun"
+            app:layout_constraintLeft_toRightOf="@+id/hygienetext"
+            android:padding="10dp"/>
+
+        <ProgressBar
+            android:theme="@style/funstyle"
+            android:id="@+id/fun"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/funtext"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/hungertext"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="hunger"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#2E8B57"
+            android:textSize="20sp"
+            android:padding="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/hunger"
+            app:layout_constraintBottom_toTopOf="@id/hygienetext"
+            />
+
+        <TextView
+            android:id="@+id/hygienetext"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="hygiene"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#4689C8"
+            android:textSize="20sp"
+            android:padding="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/hygiene"
+            app:layout_constraintBottom_toTopOf="@id/funtext"/>
+
+        <TextView
+            android:id="@+id/funtext"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="fun"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#9400D3"
+            android:textSize="20sp"
+            android:padding="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/fun"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+-->
+</android.support.constraint.ConstraintLayout>
