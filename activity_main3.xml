@@ -16,14 +16,14 @@
             android:indeterminate="false"
             android:max="100"
             android:progress="20"
-            app:layout_constraintBottom_toTopOf="@+id/cleanliness"
+            app:layout_constraintBottom_toTopOf="@+id/hygiene"
             app:layout_constraintLeft_toRightOf="@+id/hungertext"
             android:padding="10dp"/>
 
 
         <ProgressBar
             android:theme="@style/hygienestyle"
-            android:id="@+id/cleanliness"
+            android:id="@+id/hygiene"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="hunger"
-            android:fontFamily="sans-serif-light"
+            app:fontFamily="sans-serif-light"
             android:textColor="#2E8B57"
             android:textSize="20sp"
             android:padding="5dp"
@@ -66,7 +66,7 @@
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="hygiene"
-            android:fontFamily="sans-serif-light"
+            app:fontFamily="sans-serif-light"
             android:textColor="#4689C8"
             android:textSize="20sp"
             android:padding="5dp"
@@ -79,12 +79,93 @@
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="fun"
-            android:fontFamily="sans-serif-light"
+            app:fontFamily="sans-serif-light"
             android:textColor="#9400D3"
             android:textSize="20sp"
             android:padding="5dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/fun"
             app:layout_constraintBottom_toBottomOf="parent"/>
--->
+
+    <ImageButton
+        android:id="@+id/fun_button"
+        android:layout_width="85dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="12dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/hunger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/funimage" />
+
+    <ImageButton
+        android:id="@+id/hygiene_button"
+        android:layout_width="85dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/fun_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:srcCompat="@drawable/hygieneimage" />
+
+    <ImageButton
+        android:id="@+id/hunger_button"
+        android:layout_width="85dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginRight="86dp"
+        android:layout_marginBottom="9dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/hygiene_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:srcCompat="@drawable/hungericon" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/hungertext"
+        app:layout_constraintEnd_toStartOf="@+id/hunger_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructions"
+        app:srcCompat="@drawable/pigicon" />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="14dp"
+        android:center="gravity"
+        android:padding="5dp"
+        android:text="Now your job is to keep your pet alive. Make sure that it's happy, clean, and well-fed."
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/hunger_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

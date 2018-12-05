@@ -24,7 +24,7 @@ public class Main2Activity extends Activity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        et = (EditText) findViewByID(R.id.editText1);
+        et = (EditText) findViewById(R.id.choosename);
         button02 = (Button) findViewById(R.id.create);
 
         button02.setOnClickListener(this);
@@ -67,7 +67,6 @@ public class Main2Activity extends Activity implements OnClickListener{
 
         nextActivity.putExtra(TAG_NAME,name);
 
-        String
 
 
         startActivity(nextActivity);
