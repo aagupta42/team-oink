@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 public class Main2Activity extends Activity implements OnClickListener{
 
-    private static final String TAG_DEBUG = Main2Activity.class.getName();
     public static final String TAG_NAME = "tag";
 
     private EditText et;
@@ -34,18 +33,6 @@ public class Main2Activity extends Activity implements OnClickListener{
     @Override
     public void onClick(View v)
     {
-        double pet = 0.0d;
-        switch(v.getId()){
-            case R.id.create :
-            {
-                pet = 1.1d;
-                break;
-            }
-            default :
-            {
-                break;
-            }
-        }
 
 
         String name = et.getText().toString();
@@ -56,20 +43,19 @@ public class Main2Activity extends Activity implements OnClickListener{
             return;
         }
 
-        launchNextActivity(name);
+        //launchNextActivity(name);
     }
-
+/*
     private void launchNextActivity(String name)
     {
-        double pet = getIntent().getExtras().getDouble(MainActivity.TAG_PET);
 
         Intent nextActivity = new Intent(Main2Activity.this, Main3Activity.class);
 
-        nextActivity.putExtra(TAG_NAME,name);
+        //nextActivity.putExtra(TAG_NAME,name);
 
 
 
         startActivity(nextActivity);
     }
-
+*/
 }

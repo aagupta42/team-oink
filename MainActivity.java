@@ -12,7 +12,6 @@ public class MainActivity extends Activity implements OnClickListener {
 
     private Button button01;
 
-    public static final String TAG_PET = "tag";
 
 
     @Override
@@ -28,33 +27,20 @@ public class MainActivity extends Activity implements OnClickListener {
     @Override
     public void onClick(View v)
     {
-        double pet = 0.0d;
 
 
-        switch(v.getId()){
-            case R.id.play :
-            {
-                pet = 1.0d;
-                break;
-            }
-            default:
-            {
-                break;
-            }
-        }
 
-        launchNextActivity(pet);
+       // launchNextActivity();
 
     }
-
-    private void launchNextActivity(double pet)
+/*
+    private void launchNextActivity()
     {
 
         Intent NextActivity = new Intent(MainActivity.this, Main2Activity.class);
 
-        NextActivity.putExtra(TAG_PET, pet);
 
         startActivity(NextActivity);
     }
-
+*/
 }

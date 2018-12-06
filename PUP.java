@@ -2,7 +2,8 @@
 //javac -deprecation pup.java
 // java pup
 //-deprecation
-   	/**Show a description of each use or override of a deprecated member or class. Without -deprecation, javac shows a summary of the source files that use or override deprecated members or classes. -deprecation is shorthand for -Xlint:deprecation *//
+   	//Show a description of each use or override of a deprecated member or class. Without -deprecation, javac shows a summary of the source files that use or override deprecated members or classes. -deprecation is shorthand for -Xlint:deprecation *//
+package com.example.luisawatkins.mypetapp;
 
 import java.util.*; //necessary for the scanner function
 //contains the collections framework
@@ -12,7 +13,7 @@ import java.util.*; //necessary for the scanner function
 // a random number generator
 // and a bit array
 
-public class pup
+public class PUP
 { //<--- all variables and methods will be here
 
 	//first declare all the variables
@@ -52,7 +53,7 @@ public class pup
 //java public_static_void main (String args[])
  public static void main (String args[])
 {
-	pup pupper = new pup();
+	PUP pupper = new PUP();
 	pupper.pick_set();//calling a member function myclass.memberfunction()
 	pupper.hunger(missed_meal);
 	pupper.dirty(mud);
@@ -71,7 +72,7 @@ public class pup
 
 
 //object constructor
-	public pup ()//empty constructor
+	public PUP ()//empty constructor
 	{      /* public classname (things that create the object) */
 	       name=name;
 	       gender=gender;

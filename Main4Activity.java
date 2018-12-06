@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class Main4Activity extends Activity {
+public class Main4Activity extends Activity implements OnClickListener {
 
     private Button button;
 
@@ -24,17 +24,17 @@ public class Main4Activity extends Activity {
     @Override
     public void onClick(View v)
     {
-        double pet = 0.0d;
 
-        launchNextActivity(pet);
+        //launchNextActivity();
 
     }
-
-    private void launchNextActivity(double pet)
+/*
+    private void launchNextActivity()
     {
 
         Intent NextActivity = new Intent(Main4Activity.this, MainActivity.class);
 
         startActivity(NextActivity);
     }
+   */
 }
